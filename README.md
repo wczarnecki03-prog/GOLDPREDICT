@@ -4,22 +4,22 @@ Gold Price to aplikacja webowa stworzona w środowisku Python, która umożliwia
 
 ## Kluczowe Funkcjonalności
 
-Wybór Instrumentu: Obsługa kontraktów terminowych futures (GC=F) oraz funduszy ETF (GLD).
-Elastyczność Jednostek: Możliwość przeliczania cen między USD za uncję (oz) a USD za gram (g).
-Interaktywny Kalendarz: Samodzielny wybór horyzontu czasowego prognozy oraz zakresu danych historycznych.
-Tryby Optymalizacji:
-    Tryb Szybki: Ograniczenie przeszukiwania parametrów modelu dla błyskawicznych wyników.
-    Agregacja Tygodniowa: Resampling danych do interwałów piątkowych, co przyspiesza     uczenie modelu o ok. 45–60%.
-Wizualizacja Danych: Czytelne wykresy prezentujące historię, prognozę oraz pasmo niepewności (przedział ufności).
+* Wybór Instrumentu: Obsługa kontraktów terminowych futures (GC=F) oraz funduszy ETF (GLD).
+* Elastyczność Jednostek: Możliwość przeliczania cen między USD za uncję (oz) a USD za gram (g).
+* Interaktywny Kalendarz: Samodzielny wybór horyzontu czasowego prognozy oraz zakresu danych historycznych.
+* Tryby Optymalizacji:
+    * Tryb Szybki: Ograniczenie przeszukiwania parametrów modelu dla błyskawicznych wyników.
+    * Agregacja Tygodniowa: Resampling danych do interwałów piątkowych, co przyspiesza     uczenie modelu o ok. 45–60%.
+* Wizualizacja Danych: Czytelne wykresy prezentujące historię, prognozę oraz pasmo niepewności (przedział ufności).
 
 ## Architektura i Technologie
 
 | Aplikacja opiera się na nowoczesnym stosie technologicznym Python: |
 | :--- |
- | Frontend: | Streamlit – responsywny interfejs użytkownika z ciemnym motywem.|
- | Dane:  | yfinance – pobieranie danych historycznych z Yahoo Finance.|
- | Silnik Statystyczny: | statsmodels – implementacja modelu SARIMA.|
- | Matematyka i Logika: | NumPy, Pandas oraz matplotlib do generowania wykresów.|
+ | Frontend:  Streamlit – responsywny interfejs użytkownika z ciemnym motywem.|
+ | Dane:   yfinance – pobieranie danych historycznych z Yahoo Finance.|
+ | Silnik Statystyczny:  statsmodels – implementacja modelu SARIMA.|
+ | Matematyka i Logika:  NumPy, Pandas oraz matplotlib do generowania wykresów.|
 
 ## Przetwarzanie Danych
 
@@ -62,17 +62,17 @@ Wszystkie szczegóły modelu (AIC, parametry) są dostępne w sekcji technicznej
 
 | Projekt przeszedł pełną walidację scenariuszy testowych (20.01.2026): |
 | :--- |
-|  GP_01 (Podstawowa prognoza): | Zaliczony. |
-|  GP_02 (Zmiana źródła danych): | Zaliczony. |
-| GP_05 (Wydajność): | Potwierdzono znaczące skrócenie czasu pracy w trybach optymalizacji. |
+|  GP_01 (Podstawowa prognoza):  Zaliczony. |
+|  GP_02 (Zmiana źródła danych):  Zaliczony. |
+| GP_05 (Wydajność):  Potwierdzono znaczące skrócenie czasu pracy w trybach optymalizacji. |
   
 ## Autorzy
 
 | Autorzy |
 | :--- |
-| Sławomir Kobyłko | (Logika certyfikatów i SSL) |
-| Miłosz Furman | (Stylizacja UI i CSS) |
+| Sławomir Kobyłko  (Logika certyfikatów i SSL) |
+| Miłosz Furman  (Stylizacja UI i CSS) |
 | Wojciech Czarnecki (Struktura danych i wybór dat) |
 
-Disclaimer
+## Disclaimer
 Aplikacja ma charakter wyłącznie edukacyjny. Prognozy generowane przez model SARIMA bazują jedynie na danych historycznych i nie uwzględniają czynników makroekonomicznych – nie stanowią one porady inwestycyjnej.
