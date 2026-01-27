@@ -16,10 +16,10 @@ Wizualizacja Danych: Czytelne wykresy prezentujące historię, prognozę oraz pa
 
 | Aplikacja opiera się na nowoczesnym stosie technologicznym Python: |
 | :--- |
- | Frontend: Streamlit – responsywny interfejs użytkownika z ciemnym motywem.|
- | Dane:   yfinance – pobieranie danych historycznych z Yahoo Finance.|
- | Silnik Statystyczny: statsmodels – implementacja modelu SARIMA.|
- | Matematyka i Logika: NumPy, Pandas oraz matplotlib do generowania wykresów.|
+ | Frontend: | Streamlit – responsywny interfejs użytkownika z ciemnym motywem.|
+ | Dane:  | yfinance – pobieranie danych historycznych z Yahoo Finance.|
+ | Silnik Statystyczny: | statsmodels – implementacja modelu SARIMA.|
+ | Matematyka i Logika: | NumPy, Pandas oraz matplotlib do generowania wykresów.|
 
 ## Przetwarzanie Danych
 
@@ -53,20 +53,23 @@ Wszystkie szczegóły modelu (AIC, parametry) są dostępne w sekcji technicznej
     |pip install streamlit yfinance statsmodels pandas matplotlib|
 
 3. Uruchom aplikację za pomocą terminala:
-| Bash |
-| :--- |
-| treamlit run app.py |
+
+    | Bash |
+    | :--- |
+    | treamlit run app.py |
 
 ## Wyniki Testów (v1.0)
 
 | Projekt przeszedł pełną walidację scenariuszy testowych (20.01.2026): |
 | :--- |
 |  GP_01 (Podstawowa prognoza): | Zaliczony. |
-|  GP_02 (Zmiana źródła danych): Zaliczony. |
-| GP_05 (Wydajność): Potwierdzono znaczące skrócenie czasu pracy w trybach optymalizacji. |
+|  GP_02 (Zmiana źródła danych): | Zaliczony. |
+| GP_05 (Wydajność): | Potwierdzono znaczące skrócenie czasu pracy w trybach optymalizacji. |
   
 ## Autorzy
 
+| Autorzy |
+| :--- |
 | Sławomir Kobyłko | (Logika certyfikatów i SSL) |
 | Miłosz Furman | (Stylizacja UI i CSS) |
 | Wojciech Czarnecki (Struktura danych i wybór dat) |
