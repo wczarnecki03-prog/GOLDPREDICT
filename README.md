@@ -24,7 +24,9 @@ Wizualizacja Danych: Czytelne wykresy prezentujące historię, prognozę oraz pa
 ## Przetwarzanie Danych
 
 Aplikacja stabilizuje wariancję szeregu czasowego poprzez operację na logarytmach:
-$$y = \ln(\text{price})$$.
+
+| $$y_t = \ln(\text{Price}_t)$$. |
+
 Następnie automatycznie eliminuje brakujące wartości i ujednolica formaty dat, aby zapewnić ciągłość szeregu.
 
 ## Prezentacja Systemu
