@@ -14,15 +14,17 @@ Wizualizacja Danych: Czytelne wykresy prezentujące historię, prognozę oraz pa
 
 ## Architektura i Technologie
 
-Aplikacja opiera się na nowoczesnym stosie technologicznym Python:
-  Frontend: Streamlit – responsywny interfejs użytkownika z ciemnym motywem.Dane:   yfinance – pobieranie danych historycznych z Yahoo Finance.
-  Silnik Statystyczny: statsmodels – implementacja modelu SARIMA.
-  Matematyka i Logika: NumPy, Pandas oraz matplotlib do generowania wykresów.
+| Aplikacja opiera się na nowoczesnym stosie technologicznym Python: |
+| :--- |
+ | Frontend: Streamlit – responsywny interfejs użytkownika z ciemnym motywem.|
+ | Dane:   yfinance – pobieranie danych historycznych z Yahoo Finance.|
+ | Silnik Statystyczny: statsmodels – implementacja modelu SARIMA.|
+ | Matematyka i Logika: NumPy, Pandas oraz matplotlib do generowania wykresów.|
 
 ## Przetwarzanie Danych
 
 Aplikacja stabilizuje wariancję szeregu czasowego poprzez operację na logarytmach:
-$$\text{y} = \ln(\text{price})$$.
+$$y = \ln(\text{price})$$.
 Następnie automatycznie eliminuje brakujące wartości i ujednolica formaty dat, aby zapewnić ciągłość szeregu.
 
 ## Prezentacja Systemu
@@ -34,35 +36,38 @@ Wszystkie szczegóły modelu (AIC, parametry) są dostępne w sekcji technicznej
 
 | Wymaganie | Specyfikacja Minimalna | Specyfikacja Zalecana |
 |:--- | :--- | :--- |
-| Procesor | 2 rdzenie (x64),"4+ rdzenie, 2.5 GHz+" |
+| Procesor | 2 rdzenie (x64) | 4+ rdzenie, 2.5 GHz+ |
 | RAM | 4 GB | 8 GB |
 | Dysk | 1 GB wolnego miejsca | 2 GB wolnego miejsca |
-| System | Windows 10/11 / Linux / macOS,Windows 11 / macOS |
+| System | Windows 10/11 / Linux / macOS | Windows 11 / macOS |
   
 ## Instrukcja
 
 1. Sklonuj repozytorium lub pobierz pliki źródłowe.
 2. Zainstaluj wymagane biblioteki:
 
-Bash
-pip install streamlit yfinance statsmodels pandas matplotlib
+    | Bash |
+    | :--- |
+    |pip install streamlit yfinance statsmodels pandas matplotlib|
 
 3. Uruchom aplikację za pomocą terminala:
-   Bashs
-   treamlit run app.py
+| Bash |
+| :--- |
+| treamlit run app.py |
 
 ## Wyniki Testów (v1.0)
 
-Projekt przeszedł pełną walidację scenariuszy testowych (20.01.2026):
-  GP_01 (Podstawowa prognoza): Zaliczony.
-  GP_02 (Zmiana źródła danych): Zaliczony.
-  GP_05 (Wydajność): Potwierdzono znaczące skrócenie czasu pracy w trybach optymalizacji.
+| Projekt przeszedł pełną walidację scenariuszy testowych (20.01.2026): |
+| :--- |
+|  GP_01 (Podstawowa prognoza): | Zaliczony. |
+|  GP_02 (Zmiana źródła danych): Zaliczony. |
+| GP_05 (Wydajność): Potwierdzono znaczące skrócenie czasu pracy w trybach optymalizacji. |
   
 ## Autorzy
 
-Sławomir Kobyłko (Logika certyfikatów i SSL) 
-Miłosz Furman (Stylizacja UI i CSS) 
-Wojciech Czarnecki (Struktura danych i wybór dat) 
+| Sławomir Kobyłko | (Logika certyfikatów i SSL) |
+| Miłosz Furman | (Stylizacja UI i CSS) |
+| Wojciech Czarnecki (Struktura danych i wybór dat) |
 
 Disclaimer
 Aplikacja ma charakter wyłącznie edukacyjny. Prognozy generowane przez model SARIMA bazują jedynie na danych historycznych i nie uwzględniają czynników makroekonomicznych – nie stanowią one porady inwestycyjnej.
